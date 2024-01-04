@@ -1,0 +1,16 @@
+@import './styles/navbar';
+@import './styles/main';
+@import './utils/colors';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    background: $first-color;
+    width: 100%;
+    height: 100vh;
+}

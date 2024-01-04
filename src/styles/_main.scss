@@ -1,0 +1,8 @@
+@import './mainLeft';
+@import './mainRight';
+@import '../utils/colors';
+
+.main {
+    display: flex;
+    background-color: $first-color;
+}

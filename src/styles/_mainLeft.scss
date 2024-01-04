@@ -1,0 +1,144 @@
+@import "../utils/colors";
+
+.mainLeftContainer {
+  width: 340px;
+  background-color: $second-color;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  border: 1px solid $border-color;
+
+  .mainLeft {
+    max-width: 260px;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+    scrollbar-color: transparent;
+    height: 100%;
+    padding: 1px;
+
+    .mainLeftName {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 20px;
+      width: 100%;
+
+      img {
+        width: 20px;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+
+      h2 {
+        font-size: 16px;
+        color: $grey-color;
+      }
+    }
+
+    .mainLeftList {
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 6px 0;
+
+        img {
+          width: 18px;
+          object-fit: contain;
+          border-radius: 50%;
+        }
+
+        h2 {
+          font-size: 14px;
+          color: $grey-color;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $grey-two-color;
+        font-size: 12px;
+        margin: 14px 0 20px;
+      }
+    }
+
+    .recentRepo {
+      width: 100%;
+      margin: 24px auto 8px;
+
+      .recentRepos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 14px;
+          color: $grey-color;
+        }
+
+        button {
+          cursor: pointer;
+          width: 64px;
+          height: 28px;
+          border: none;
+          background-color: #2a913d;
+          color: white;
+          font-size: 14px;
+          font-weight: bold;
+          border-radius: 4px;
+        }
+
+        button:hover {
+          background-color: #2ea043;
+        }
+      }
+
+      .inputBox {
+        padding: 2px;
+      }
+    }
+
+    .line {
+      padding: 1px;
+      background-color: $line-color;
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+      margin: 10px auto;
+      height: 34px;
+      background-color: #0c1117;
+      border: 1px solid $line-color;
+      font-size: 14px;
+      padding-left: 10px;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .inputBoxTwo {
+        margin-bottom: 80px;
+        padding: 2px;
+    }
+
+    p {
+        margin: 12px auto;
+        color: $grey-two-color;
+        font-size: 12px;
+    }
+  }
+}
+
+.mainLeft::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  width: 20px;
+}
